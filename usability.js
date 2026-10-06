@@ -1,11 +1,11 @@
 // Small, progressive enhancements for the student guide.
 (()=>{
-const dateFor=name=>['学术区食堂','学生宿舍区'].includes(name)?'2026-10-03':'2026-10-02';
+const dateFor=name=>['图书馆','Cafe Koi','包裹中心','Bizz Mall 旁洗衣服务','学术区食堂','食堂','Café Siber'].includes(name)?'2026-10-04':['学术区食堂','学生宿舍区'].includes(name)?'2026-10-03':'2026-10-02';
 const overview=document.createElement('section');overview.className='guide-block';overview.id='open-now';
 document.querySelector('#life .outing-entry').after(overview);
 function refreshHours(){
- const names=['Coop Mart','学术区食堂','食堂','Café Siber','体育综合设施','游泳池','图书馆','Cafe Koi','包裹中心','Bizz Mall'];
- overview.innerHTML='<h2>现在有开吗？</h2><p class="hours-sort-note">依次显示：开放时段、非开放时段、时间待确认。</p><p>按马来西亚时间与已提供的常规时间表推算，非现场实时状态。假期及临时调整请向店家或工作人员确认。</p><div class="opening-grid">'+names.map(name=>({name,t:todaySchedule(name)})).sort((a,b)=>({open:0,closed:1,unknown:2}[a.t.state]-{open:0,closed:1,unknown:2}[b.t.state])).map(({name,t})=>{return `<article class="opening-card ${t.state}"><h3>${name}</h3><strong>${t.status}</strong><p>${t.slots.map(s=>s.a+'–'+s.b+(s.label?' · '+s.label:'')).join('<br>')||(t.state==='closed'?'今日无开放时段':'今天的时段待确认')}</p>${name==='游泳池'?'<p>'+t.note+'</p>':''}<small>资料更新：${dateFor(name)}</small></article>`;
+ const names=['Coop Mart','学术区食堂','食堂','Café Siber','体育综合设施','游泳池','图书馆','Cafe Koi','包裹中心'];
+ overview.innerHTML='<h2>现在有开吗？</h2><p class="hours-sort-note">依次显示：开放时段、非开放时段、时间待确认。</p><p>按马来西亚时间与已提供的常规时间表推算，非现场实时状态。假期及临时调整请向店家或工作人员确认。</p><div class="opening-grid">'+names.map(name=>({name,t:todaySchedule(name)})).sort((a,b)=>({open:0,closed:1,unknown:2}[a.t.state]-{open:0,closed:1,unknown:2}[b.t.state])).map(({name,t})=>{return `<article class="opening-card ${t.state}"><h3>${name}</h3><strong>${t.state==='unknown'?'今日营业安排待确认':t.status}</strong><p>${t.slots.map(s=>s.a+'–'+s.b+(s.label?' · '+s.label:'')).join('<br>')||(t.state==='closed'?'今日无开放时段':'今天的时段待确认')}</p>${t.state==='unknown'&&lifeByName.get(name)?.hours?.some(h=>/\d{2}:\d{2}/.test(h[1]))?'<div class="known-hours"><h4>已知营业时间</h4>'+lifeByName.get(name).hours.map(h=>'<p>'+h[0]+'<br>'+h[1]+'</p>').join('')+'</div>':''}${name==='游泳池'?'<p>'+t.note+'</p>':''}<small>资料更新：${dateFor(name)}</small></article>`;
  }).join('')+'</div><p class="detail-source">马来西亚时间 · '+new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kuala_Lumpur',dateStyle:'medium',timeStyle:'short'}).format(new Date())+'</p>';
 }
 refreshHours();setInterval(refreshHours,60000);

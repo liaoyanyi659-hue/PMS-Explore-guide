@@ -1,4 +1,4 @@
-let currentLanguage='zh';try{const saved=localStorage.getItem('pms-language');if(['zh','en','ms'].includes(saved))currentLanguage=saved}catch{}
+let currentLanguage='en';try{const saved=localStorage.getItem('pms-language');if(['zh','en','ms'].includes(saved))currentLanguage=saved}catch{}
 const translationPattern=new RegExp(Object.keys(translations).sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 function tr(text,language=currentLanguage){if(language==='zh')return text;return text.replace(translationPattern,key=>translations[key][language]||key)}
 const originalText=new WeakMap(),originalAttributes=new WeakMap();
