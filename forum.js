@@ -41,7 +41,8 @@
   async function loadFeed(append=false){
     const request=++state.feedRequest;const page=append?state.page+1:1;
     if(!append){$('#feed').innerHTML='<div class="empty">正在读取分享…</div>';$('#load-more').hidden=true;}
-    try{const r=await api('posts',{params:{page,category:state.category,q:state.q}});if(request!==state.feedRequest)return;
+    const extra={};$('#lf-filters').hidden=state.category!=='lost_found';if(state.category==='lost_found')for(const [id,key]of [['lf-kind','lf_kind'],['lf-resolved','lf_resolved'],['lf-location','lf_location'],['lf-from','lf_from'],['lf-to','lf_to']]){const v=$('#'+id).value;if(v!=='')extra[key]=v;}
+    try{const r=await api('posts',{params:{page,category:state.category,q:state.q,...extra}});if(request!==state.feedRequest)return;
       if(!append)state.posts.clear();r.posts.forEach(p=>state.posts.set(Number(p.id),p));state.page=page;renderFeed();$('#load-more').hidden=!r.has_more;connection('校园见闻 · 校园美景 · 求助问答 · 吐槽交流');
     }catch(e){if(request!==state.feedRequest)return;connection(e.message,true);if(!append)$('#feed').innerHTML='<div class="empty"><h3>暂时无法读取帖子</h3><p>如果是第一次安装，请先完成 Hostinger 后台配置。</p><button data-action="refresh">重新连接</button></div>';throw e;}
   }
@@ -85,6 +86,7 @@
   $('#photos').addEventListener('change',()=>{clearPreviews();const files=[...$('#photos').files];if(files.length>3){$('#photos').value='';$('#compose-form .form-error').textContent='每篇最多三张照片。';return;}$('#compose-form .form-error').textContent='';for(const f of files){const src=URL.createObjectURL(f);state.previews.push(src);const img=document.createElement('img');img.src=src;img.alt='待上传照片预览';$('#photo-preview').append(img);}});
   $('#comment-form').addEventListener('submit',e=>{e.preventDefault();if(!needUser())return;submit(e.currentTarget,async()=>{if(!state.current)throw new Error('请重新打开帖子。');await api('comment',{method:'POST',data:{post_id:state.current.id,body:$('#comment-text').value}});$('#comment-text').value='';await openPost(state.current.id);renderFeed();});});
   $('#report-form').addEventListener('submit',e=>{e.preventDefault();submit(e.currentTarget,async()=>{await api('report',{method:'POST',data:{...state.report,reason:e.currentTarget.elements.reason.value}});$('#report-dialog').close();toast('举报已提交，等待管理员查看。');});});
+  $('#lf-filters').addEventListener('change',()=>loadFeed().catch(e=>toast(e.message)));
   $('#search-form').addEventListener('submit',e=>{e.preventDefault();state.q=$('#search').value.trim();loadFeed().catch(e=>toast(e.message));});
   async function loadAdmin(append=false){
     if(!append){openDialog('#admin-dialog');$('#reports').textContent='正在读取…';state.hiddenPage=1;const r=await api('admin_reports');$('#reports').innerHTML=r.reports.length?r.reports.map(v=>`<article class="admin-item"><h4><span data-no-translate>${esc(v.title)}</span></h4><p>举报原因：<span data-no-translate>${esc(v.reason)}</span></p>${v.comment_id?`<p>被举报评论：<span data-no-translate>${esc(v.comment_body)}</span></p>`:''}<button data-action="open" data-id="${Number(v.post_id)}">查看帖子</button>${v.comment_id?`<button data-action="hide-comment" data-id="${Number(v.comment_id)}">隐藏评论</button>`:`<button data-action="hide-reported" data-id="${Number(v.post_id)}">隐藏帖子</button>`}<button data-action="resolve" data-id="${Number(v.id)}" data-status="resolved">标记已处理</button><button data-action="resolve" data-id="${Number(v.id)}" data-status="dismissed">驳回举报</button></article>`).join(''):'<p class="small">没有待处理举报。</p>';}else state.hiddenPage++;
@@ -126,7 +128,7 @@
     updateAccount();
     try{const health=await api('health',{publicRequest:true});if(!health.images_ready)toast('文字功能可用；照片上传需要开启 GD 扩展。');
       if(state.token){try{const r=await api('me');state.user=r.user;updateAccount();}catch(_){setToken('');state.user=null;updateAccount();}}
-      await loadFeed();
+      await loadFeed();const target=new URL(location.href).searchParams.get('post');if(target&&/^\d+$/.test(target))await openPost(Number(target));
     }catch(e){connection(e.message,true);$('#feed').innerHTML='<div class="empty"><h3>论坛正在准备中</h3><p>后台连接成功后，这里会显示同学的分享。</p><button data-action="refresh">重新连接</button></div>';}
   }
   start();

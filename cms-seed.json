@@ -1,0 +1,659 @@
+{
+  "records": [
+    {
+      "record_key": "行政办公室",
+      "payload": {
+        "title": {
+          "zh": "行政办公室",
+          "en": "Administration office",
+          "ms": "Pejabat pentadbiran"
+        },
+        "body": {
+          "zh": "根据设施参考图的 PEJABAT ADMIN 标注，对照原校园底图定位。具体办公入口请以现场标示为准。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园设施",
+        "x": 63.3,
+        "y": 26.5,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "旅游与酒店管理系",
+      "payload": {
+        "title": {
+          "zh": "旅游与酒店管理系",
+          "en": "Tourism & Hospitality Department",
+          "ms": "Jabatan Pelancongan & Hospitaliti"
+        },
+        "body": {
+          "zh": "根据设施参考图的 JPH 标注，对照原校园底图定位。具体办公室或课室入口仍需确认。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "教学区域",
+        "x": 58,
+        "y": 47.8,
+        "media_id": null,
+        "photo_path": "photos/jph-building.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "伊斯兰中心",
+      "payload": {
+        "title": {
+          "zh": "伊斯兰中心",
+          "en": "Islamic centre",
+          "ms": "Pusat Islam"
+        },
+        "body": {
+          "zh": "根据原图 Pusat Islam Politeknik Muadzam Shah 标记定位。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园设施",
+        "x": 60,
+        "y": 52,
+        "media_id": null,
+        "photo_path": "photos/pusat-islam.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "体育综合设施",
+      "payload": {
+        "title": {
+          "zh": "体育综合设施",
+          "en": "Sports complex",
+          "ms": "Kompleks sukan"
+        },
+        "body": {
+          "zh": "根据原图左下方体育设施图钉定位，附近可见运动场。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 25,
+        "y": 73,
+        "media_id": null,
+        "photo_path": "photos/sports-complex.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "发展与维修单位",
+      "payload": {
+        "title": {
+          "zh": "发展与维修单位",
+          "en": "Development & Maintenance Unit",
+          "ms": "Unit Pembangunan & Senggaraan"
+        },
+        "body": {
+          "zh": "根据原图顶部文字与图钉标注；该区域靠近图片上边缘。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园设施",
+        "x": 85,
+        "y": 3.5,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "田径场",
+      "payload": {
+        "title": {
+          "zh": "田径场",
+          "en": "Athletics track",
+          "ms": "Trek olahraga"
+        },
+        "body": {
+          "zh": "根据原图中可见的椭圆形跑道标注，正式场地名称与入口待确认。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 37,
+        "y": 68,
+        "media_id": null,
+        "photo_path": "photos/athletics-track.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "图书馆",
+      "payload": {
+        "title": {
+          "zh": "图书馆",
+          "en": "Library",
+          "ms": "Perpustakaan"
+        },
+        "body": {
+          "zh": "Mini Library 位于 Aras 1（1 楼）的 Bilik Studio UIDM；请从楼内前往。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "教学区域",
+        "x": 70.7,
+        "y": 40,
+        "media_id": null,
+        "photo_path": "photos/mini-library-notice.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "Coop Mart",
+      "payload": {
+        "title": {
+          "zh": "Coop Mart",
+          "en": "Coop Mart",
+          "ms": "Coop Mart"
+        },
+        "body": {
+          "zh": "位于男女生宿舍附近，从标有 “Love Kamsis” 的入口直走即可到达。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 79.6,
+        "y": 53,
+        "media_id": null,
+        "photo_path": "photos/coop-mart-current.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "Cafe Koi",
+      "payload": {
+        "title": {
+          "zh": "Cafe Koi",
+          "en": "Cafe Koi",
+          "ms": "Cafe Koi"
+        },
+        "body": {
+          "zh": "周一至周五营业，07:00–16:30；周末非营业。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 64.7,
+        "y": 40,
+        "media_id": null,
+        "photo_path": "photos/cafe-koi.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "包裹中心",
+      "payload": {
+        "title": {
+          "zh": "包裹中心",
+          "en": "Parcel centre",
+          "ms": "Pusat Parcel"
+        },
+        "body": {
+          "zh": "位于 Bizz Mall。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园设施",
+        "x": 91.7,
+        "y": 43.6,
+        "media_id": null,
+        "photo_path": "photos/pusat-parcel.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "食堂",
+      "payload": {
+        "title": {
+          "zh": "食堂",
+          "en": "Cafeteria",
+          "ms": "Kafeteria"
+        },
+        "body": {
+          "zh": "校园内的日常用餐地点。各店铺营业安排可能不同。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 74.4,
+        "y": 52.9,
+        "media_id": null,
+        "photo_path": "photos/cafeteria.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "Café Siber",
+      "payload": {
+        "title": {
+          "zh": "Café Siber",
+          "en": "Café Siber / Cyber Café · HEP 楼下",
+          "ms": "Café Siber / Cyber Café · HEP 楼下"
+        },
+        "body": {
+          "zh": "位于学生事务处（HEP）楼下，可购买文具和日常小食，也可复印文件。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 66.6,
+        "y": 30.7,
+        "media_id": null,
+        "photo_path": "photos/cyber-cafe.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "宿舍洗衣服务",
+      "payload": {
+        "title": {
+          "zh": "宿舍洗衣服务",
+          "en": "Hostel laundry",
+          "ms": "Dobi asrama"
+        },
+        "body": {
+          "zh": "洗衣服务位于学生宿舍内。不同宿舍的设备及支付方式可能不同，请到所在宿舍查看。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 83.2,
+        "y": 47.8,
+        "media_id": null,
+        "photo_path": "photos/laundry-card-machine.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "Bizz Mall 旁洗衣服务",
+      "payload": {
+        "title": {
+          "zh": "Bizz Mall 旁洗衣服务",
+          "en": "Laundry beside Bizz Mall",
+          "ms": "Dobi di sebelah Bizz Mall"
+        },
+        "body": {
+          "zh": "位于 Bizz Mall 旁边、女生宿舍后方。地图关联 Bizz Mall 区域，抵达后请到旁边的洗衣设施。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 91.7,
+        "y": 43.6,
+        "media_id": null,
+        "photo_path": "photos/bizz-mall-laundry.jpeg",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "Bizz Mall",
+      "payload": {
+        "title": {
+          "zh": "Bizz Mall",
+          "en": "Bizz Mall",
+          "ms": "Bizz Mall"
+        },
+        "body": {
+          "zh": "校园小型购物区域之一，Pusat Parcel 包裹中心位于这里。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 91.7,
+        "y": 43.6,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "机械工程系",
+      "payload": {
+        "title": {
+          "zh": "机械工程系",
+          "en": "Mechanical Engineering Department",
+          "ms": "Jabatan Kejuruteraan Mekanikal"
+        },
+        "body": {
+          "zh": "根据设施参考图中的 JKM 区域标注。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "教学区域",
+        "x": 77.4,
+        "y": 13.2,
+        "media_id": null,
+        "photo_path": "photos/jkm.png",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "JRKV 教学区域",
+      "payload": {
+        "title": {
+          "zh": "JRKV 教学区域",
+          "en": "JRKV academic area",
+          "ms": "Kawasan akademik JRKV"
+        },
+        "body": {
+          "zh": "根据设施参考图中的 JRKV 标注；具体办公室及课室资料待补充。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "教学区域",
+        "x": 84.6,
+        "y": 27.8,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "资讯与通讯科技系",
+      "payload": {
+        "title": {
+          "zh": "资讯与通讯科技系",
+          "en": "Information & Communication Technology Department",
+          "ms": "Jabatan Teknologi Maklumat & Komunikasi"
+        },
+        "body": {
+          "zh": "根据设施参考图中的 JTMK 区域标注。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "教学区域",
+        "x": 78.4,
+        "y": 38.3,
+        "media_id": null,
+        "photo_path": "photos/jtmk.png",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "学生事务处",
+      "payload": {
+        "title": {
+          "zh": "学生事务处",
+          "en": "Student Affairs Unit",
+          "ms": "Unit Hal Ehwal Pelajar"
+        },
+        "body": {
+          "zh": "根据设施参考图中校园中心的 HEP 标注。与行政办公室分开标示。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园设施",
+        "x": 66.6,
+        "y": 30.7,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "JP / JPA / JMSK 教学区域",
+      "payload": {
+        "title": {
+          "zh": "JP / JPA / JMSK 教学区域",
+          "en": "JP / JPA / JMSK academic area",
+          "ms": "Kawasan akademik JP / JPA / JMSK"
+        },
+        "body": {
+          "zh": "参考图将这一区域标为 JP / JPA / JMSK，具体部门入口待补充。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "教学区域",
+        "x": 57.5,
+        "y": 35.5,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "学术区食堂",
+      "payload": {
+        "title": {
+          "zh": "学术区食堂",
+          "en": "Academic cafeteria",
+          "ms": "Kafe akademik"
+        },
+        "body": {
+          "zh": "星期一至五营业，早上 8 点到下午 5 点。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 75,
+        "y": 21.6,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "学生宿舍区",
+      "payload": {
+        "title": {
+          "zh": "学生宿舍区",
+          "en": "Student hostels",
+          "ms": "Asrama pelajar"
+        },
+        "body": {
+          "zh": "男生宿舍：Block 1–5。女生宿舍：Block A–E。报到时先确认自己的 Block 和房号，再跟着现场标示找宿舍。地图目前标示宿舍区域，尚未逐栋定位。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 83.2,
+        "y": 47.8,
+        "media_id": null,
+        "photo_path": "",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    },
+    {
+      "record_key": "游泳池",
+      "payload": {
+        "title": {
+          "zh": "游泳池",
+          "en": "Swimming pool",
+          "ms": "Kolam renang"
+        },
+        "body": {
+          "zh": "位于旅游与酒店管理系（JPH）旁，地图位置依据你提供的圈选区域标注。",
+          "en": "",
+          "ms": ""
+        },
+        "category": "校园生活",
+        "x": 50.4,
+        "y": 38.7,
+        "media_id": null,
+        "photo_path": "photos/swimming-pool.png",
+        "closure": "normal",
+        "schedule": null,
+        "note": {
+          "en": "",
+          "ms": "",
+          "zh": ""
+        }
+      }
+    }
+  ],
+  "photos": [
+    "photos/athletics-track.jpeg",
+    "photos/bandar-pasar.jpeg",
+    "photos/bizz-mall-laundry.jpeg",
+    "photos/cafe-koi.jpeg",
+    "photos/cafeteria.jpeg",
+    "photos/campus-blossoms.jpeg",
+    "photos/campus-evening-lane.jpeg",
+    "photos/campus-golden-sky.jpeg",
+    "photos/campus-lake-day.jpeg",
+    "photos/campus-lake-sunset.jpeg",
+    "photos/campus-reflections.jpeg",
+    "photos/campus-sports-dusk.jpeg",
+    "photos/coop-mart-current.jpeg",
+    "photos/coop-mart.jpeg",
+    "photos/cyber-cafe.jpeg",
+    "photos/felo-board.jpeg",
+    "photos/felo-office.jpeg",
+    "photos/jkm.png",
+    "photos/jph-building.jpeg",
+    "photos/jtmk.png",
+    "photos/laundry-card-machine.jpeg",
+    "photos/mini-library-notice.jpeg",
+    "photos/parcel-hours.jpeg",
+    "photos/pool-rules.jpeg",
+    "photos/pool-schedule.jpeg",
+    "photos/pusat-islam.jpeg",
+    "photos/pusat-parcel.jpeg",
+    "photos/salon-interior.jpeg",
+    "photos/salon-prices.jpeg",
+    "photos/sports-complex.jpeg",
+    "photos/swimming-pool.png",
+    "photos/timetable-example.jpeg"
+  ]
+}

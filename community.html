@@ -8,6 +8,7 @@
 <meta name="description" content="分享 PMS 校园见闻、美景、求助与日常。">
 <link rel="stylesheet" href="forum.css">
 <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/pms-192.png"><meta name="theme-color" content="#15334d">
+<link rel="stylesheet" href="polish.css"><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="stylesheet" href="navigation.css?v=1.6">
 </head>
 <body>
 <a class="skip" href="#feed">跳到帖子</a>
@@ -17,7 +18,7 @@
 <div id="connection" class="connection" role="status">正在连接校园社区…</div>
 <div class="layout"><section class="main-feed" aria-label="校园帖子">
 <div class="feed-tools"><div class="categories" aria-label="帖子分类"><button class="selected" data-action="category" data-category="" aria-pressed="true">全部</button><button data-action="category" data-category="campus" aria-pressed="false">校园见闻</button><button data-action="category" data-category="scenery" aria-pressed="false">校园美景</button><button data-action="category" data-category="help" aria-pressed="false">求助问答</button><button data-action="category" data-category="vent" aria-pressed="false">吐槽交流</button><button data-action="category" data-category="lost_found" aria-pressed="false">失物招领</button></div><form id="search-form"><label class="sr-only" for="search">搜索帖子</label><input id="search" type="search" maxlength="80" placeholder="搜索标题或内容"><button type="submit">搜索</button></form></div>
-<div class="feed-heading"><h2>最新分享</h2><button data-action="refresh" class="quiet">刷新</button></div>
+<div id="lf-filters" class="plus-filters" hidden data-no-translate><label>Lost / Found<select id="lf-kind"><option value="">All / Semua / 全部</option><option value="lost">Lost / Hilang / 遗失</option><option value="found">Found / Dijumpai / 捡到</option></select></label><label>Status<select id="lf-resolved"><option value="">All / Semua / 全部</option><option value="0">Open / Belum selesai / 未解决</option><option value="1">Resolved / Selesai / 已解决</option></select></label><label>Location / Lokasi<input id="lf-location" maxlength="120"></label><label>From / Dari<input id="lf-from" type="date"></label><label>Until / Hingga<input id="lf-to" type="date"></label></div><div class="feed-heading"><h2>最新分享</h2><button data-action="refresh" class="quiet">刷新</button></div>
 <div id="feed" aria-live="polite" tabindex="-1"></div><button id="load-more" class="load-more" data-action="more" hidden>加载更多</button>
 </section><aside class="sidebar"><section class="side-card"><span class="eyebrow">一起维护这个小社区</span><h2>欢迎来坐坐。</h2><p>不用写得很正式，一张照片、一段心情都可以。</p><ul><li>公开显示昵称，电邮不公开。</li><li>尊重他人，不公开个人隐私。</li><li>吐槽事情，避免辱骂、造谣或人身攻击。</li><li>不发布广告、垃圾信息或他人私密照片。</li></ul><p class="small">帖子属于用户分享，不代表校方。发现不合适的内容，请点击举报。</p></section><section class="side-card"><h3>校园实用资讯</h3><p>找课室、宿舍、营业时间和新生指南。</p><a class="guide-link" href="index.html">返回校园探索 ↗</a></section><section class="side-card" id="member-card" hidden></section></aside></div>
 </main>
@@ -29,4 +30,5 @@
 <dialog id="report-dialog"><div class="dialog-head"><h2>举报内容</h2><button type="button" data-action="close" aria-label="关闭">×</button></div><form id="report-form"><label>举报原因<textarea name="reason" rows="4" minlength="3" maxlength="1000" required placeholder="请具体说明问题，管理员会查看。"></textarea></label><p class="form-error" role="alert"></p><button type="submit" class="primary full">提交举报</button></form></dialog>
 <dialog id="admin-dialog" class="wide-dialog"><div class="dialog-head"><h2>社区管理</h2><button type="button" data-action="close" aria-label="关闭">×</button></div><p class="small">举报处理和隐藏帖子仅管理员可见。隐藏后，帖子及照片不再公开提供。</p><h3>待处理举报</h3><div id="reports"></div><h3>已隐藏帖子</h3><div id="hidden-posts"></div><button id="hidden-more" data-action="hidden-more" class="quiet" hidden>更多隐藏帖子</button></dialog>
 <script src="forum-i18n.js"></script><script src="forum-config.js"></script><script src="forum.js"></script>
+<script src="complete.js"></script><script src="navigation.js?v=1.6"></script>
 </body></html>
